@@ -6,5 +6,8 @@ import {Component} from '@angular/core';
 @Component({
   selector: 'museums-component',
   templateUrl: 'museums.component.html',
+  styleUrls: ['museums.component.css']
 })
-export class MuseumsComponent {}
+export class MuseumsComponent {
+  
+}

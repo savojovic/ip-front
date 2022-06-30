@@ -3,19 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TestComponent } from './test/test.component';
+import { NavbarComponent } from './navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MuseumsComponent } from './museums/museums.component'
 import { MatListModule } from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
+import { ToursComponent } from './tours/tours.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent,
-    MuseumsComponent
+    NavbarComponent,
+    MuseumsComponent,
+    ToursComponent
   ],
   imports: [
     MatCardModule,

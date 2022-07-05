@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import { MuseumsService } from '../museums.service';
 
 /**
  * @title Basic list
@@ -8,6 +9,18 @@ import {Component} from '@angular/core';
   templateUrl: 'museums.component.html',
   styleUrls: ['museums.component.css']
 })
-export class MuseumsComponent {
+export class MuseumsComponent implements OnInit{
+
+  museums = new Array<any>();
+
+  constructor(public museumService: MuseumsService){}
+
+  ngOnInit(): void {
+    console.log("Init museum component");
+    this.museumService.getMuseums().subscribe(response => {
+      console.log(response)
+      this.museums = response;
+    })
+  }
   
 }

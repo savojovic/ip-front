@@ -10,7 +10,7 @@ import { MuseumsComponent } from './museums/museums.component'
 import { MatListModule } from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import { ToursComponent } from './tours/tours.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,8 @@ import { ToursComponent } from './tours/tours.component';
     MatButtonModule,
     MatToolbarModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

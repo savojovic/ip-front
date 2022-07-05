@@ -11,13 +11,15 @@ import { MatListModule } from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import { ToursComponent } from './tours/tours.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MuseumdetailsComponent } from './museumdetails/museumdetails.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     MuseumsComponent,
-    ToursComponent
+    ToursComponent,
+    MuseumdetailsComponent
   ],
   imports: [
     MatCardModule,

@@ -15,6 +15,4 @@ export class MuseumsService {
     const url = 'http://localhost:8080/museums';
     return this.http.get<any>(url);
   }
-
 }
-

@@ -12,6 +12,7 @@ import {MatCardModule} from '@angular/material/card';
 import { ToursComponent } from './tours/tours.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MuseumdetailsComponent } from './museumdetails/museumdetails.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MuseumdetailsComponent } from './museumdetails/museumdetails.component'
     NavbarComponent,
     MuseumsComponent,
     ToursComponent,
-    MuseumdetailsComponent
+    MuseumdetailsComponent,
+    HomepageComponent
   ],
   imports: [
     MatCardModule,

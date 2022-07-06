@@ -13,6 +13,7 @@ import { ToursComponent } from './tours/tours.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MuseumdetailsComponent } from './museumdetails/museumdetails.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { WeatherComponent } from './weather/weather.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HomepageComponent } from './homepage/homepage.component';
     MuseumsComponent,
     ToursComponent,
     MuseumdetailsComponent,
-    HomepageComponent
+    HomepageComponent,
+    WeatherComponent
   ],
   imports: [
     MatCardModule,

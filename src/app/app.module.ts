@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MuseumdetailsComponent } from './museumdetails/museumdetails.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { WeatherComponent } from './weather/weather.component';
+import { MuseumcardComponent } from './museumcard/museumcard.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { WeatherComponent } from './weather/weather.component';
     ToursComponent,
     MuseumdetailsComponent,
     HomepageComponent,
-    WeatherComponent
+    WeatherComponent,
+    MuseumcardComponent
   ],
   imports: [
     MatCardModule,

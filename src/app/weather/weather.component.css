@@ -2,10 +2,3 @@ div {
     flex: 50%;
     /* padding: 10px; */
 }
-.weather-card {
-    float: left;
-    width: 31%;
-    margin-left: 3px;
-    text-align: center;
-    margin-top: 3px;
-}

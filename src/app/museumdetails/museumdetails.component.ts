@@ -11,7 +11,7 @@ export class MuseumdetailsComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-    const url = this.router.url.substring(this.router.url.lastIndexOf('/')+1);//+1 for excluding '/' from /id
+    const url = this.router.url.substring(this.router.url.lastIndexOf('/') + 1);//+1 for excluding '/' from /id
     console.log(url);
   }
 }

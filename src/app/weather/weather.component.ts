@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { WeatherService } from '../weather.service';
-import {formatDate} from '@angular/common';
+import { formatDate } from '@angular/common';
+import { openWeatherImgUrl } from 'src/environments/environment';
 
 @Component({
   selector: 'app-weather',
@@ -9,21 +10,23 @@ import {formatDate} from '@angular/common';
 })
 export class WeatherComponent implements OnInit {
 
-  
-  constructor(public weatherService: WeatherService) { 
-    this.date = formatDate(new Date(),'dd/MM/YYYY', 'en');
+
+  constructor(public weatherService: WeatherService) {
+    this.date = formatDate(new Date(), 'dd/MM/YYYY', 'en');
   }
 
   cityName: any;
   iconCode: any;
   date: any;
+  imgUrl: any;
 
   ngOnInit(): void {
     console.log("Init Weather component")
     //TODO: Get a random city from the same country the museum is in
-    this.weatherService.getWeatherFor("Banja Luka, ba").subscribe(response =>{
+    this.weatherService.getWeatherFor("Banja Luka, ba").subscribe(response => {
       this.cityName = response.name;
       this.iconCode = response.weather[0].icon;
+      this.imgUrl = openWeatherImgUrl;
     })
   }
 }

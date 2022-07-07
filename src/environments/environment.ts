@@ -6,6 +6,13 @@ export const environment = {
   production: false
 };
 
+export const baseUrl = "http://localhost:8080";
+export const museumEndPoint = `/museums`;
+export const openWeatherApiKey = `appid=63af5b14517966d094353d593b864a5f`;
+export const openWeatherUrl = `https://api.openweathermap.org/data/2.5/weather`;
+export const openWeatherImgUrl = `http://openweathermap.org/img/wn/`;
+
+
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { baseUrl, museumEndPoint } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,7 @@ export class MuseumsService {
 
   //Http Client get method
   public getMuseums(): Observable<any> {
-    const url = 'http://localhost:8080/museums';
+    const url = `${baseUrl}${museumEndPoint}`;
     return this.http.get<any>(url);
   }
 }

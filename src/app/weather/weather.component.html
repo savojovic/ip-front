@@ -1,4 +1,4 @@
-<mat-card class="mat-elevation-z5 weather-card" >
+<mat-card class="mat-elevation-z5 weather-card">
     <mat-card-header>
         <div style="padding-top: 25px;">
             <!-- <mat-card-title>London</mat-card-title> -->
@@ -6,6 +6,6 @@
 
             <mat-card-subtitle [attr.date]="date">Today: {{date}}</mat-card-subtitle>
         </div>
-        <img [attr.iconCode]="iconCode" [attr.imgUrl]="imgUrl" src="{{imgUrl}}{{iconCode}}@2x.png" />
+        <img [attr.iconCode]="iconCode" [attr.imgUrl]="imgUrl" *ngIf="iconCode && imgUrl" src="{{imgUrl}}{{iconCode}}@2x.png" />
     </mat-card-header>
 </mat-card>

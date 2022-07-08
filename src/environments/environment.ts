@@ -11,7 +11,7 @@ export const museumEndPoint = `/museums`;
 export const openWeatherApiKey = `appid=63af5b14517966d094353d593b864a5f`;
 export const openWeatherUrl = `https://api.openweathermap.org/data/2.5/weather`;
 export const openWeatherImgUrl = `http://openweathermap.org/img/wn/`;
-
+export const citiesForACountryUrl = `https://countriesnow.space/api/v0.1/countries/cities`;
 
 /*
  * For easier debugging in development mode, you can import the following file

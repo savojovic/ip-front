@@ -23,6 +23,8 @@ export class WeatherComponent implements OnInit {
   ngOnInit(): void {
     console.log("Init Weather component")
     //TODO: Get a random city from the same country the museum is in
+    this.weatherService.getRandomCity("Bosnia and Herzegovina");
+    
     this.weatherService.getWeatherFor("Banja Luka, ba").subscribe(response => {
       this.cityName = response.name;
       this.iconCode = response.weather[0].icon;

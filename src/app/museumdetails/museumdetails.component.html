@@ -1,11 +1,11 @@
 <div style="display: flex;flex-direction: column;">
     <app-navbar></app-navbar>
     <div>
-        <app-weather class="weather-card"></app-weather>
-        <app-weather class="weather-card"></app-weather>
-        <app-weather class="weather-card"></app-weather>
+        <app-weather [attr.museumId]="museumId" [museumId]="museumId" class="weather-card"></app-weather>
+        <app-weather [attr.museumId]="museumId" [museumId]="museumId" class="weather-card"></app-weather>
+        <app-weather [attr.museumId]="museumId" [museumId]="museumId" class="weather-card"></app-weather>
     </div>
-    <div >
-       <app-museumcard></app-museumcard>
+    <div>
+       <app-museumcard [attr.museumId]="museumId" [museumId]="museumId"></app-museumcard>
     </div>
 </div>

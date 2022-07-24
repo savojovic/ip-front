@@ -1,0 +1,11 @@
+.museum-list-card{
+    /* background-color: lightgray; */
+    border-radius: 10px;
+    border: 2px solid black;
+    /* width: 90%; */
+}
+.list-item{
+    border-radius: 10px;
+    margin-top: 1%;
+    border: 1px solid gray;
+}

@@ -1,3 +1,9 @@
 <mat-card class="mat-elevation-z5" style="margin-top: 20px; margin-right: 5px; margin-left: 3px; height: 500px;">
-    
+    <mat-card class="mat-elevation-z5 museum-list-card" style="width: 40%; float: left;">
+        <div [attr.name]="name" [attr.type]="type">
+            Museum name <b>{{name}}</b><br>
+            Museum type <b>{{type}}</b>
+        </div>
+    </mat-card>
+    <app-tours [attr.museumId]="museumId" [museumId]="museumId" style="width: 50%; float: right;"></app-tours>
 </mat-card>

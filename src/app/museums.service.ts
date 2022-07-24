@@ -16,4 +16,7 @@ export class MuseumsService {
     const url = `${baseUrl}${museumEndPoint}`;
     return this.http.get<any>(url);
   }
+  public getMuseumById(id?: any){
+    return this.http.get<any>(baseUrl+museumEndPoint+`?id=${id}`);
+  }
 }

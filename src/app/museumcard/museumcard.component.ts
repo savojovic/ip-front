@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { MuseumsService } from '../museums.service';
 
 @Component({
   selector: 'app-museumcard',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./museumcard.component.css']
 })
 export class MuseumcardComponent implements OnInit {
+  @Input() museumId: any; 
 
-  constructor() { }
-
+  constructor(private museumService: MuseumsService) { }
+  name?: any;
+  type?: any;
+  
   ngOnInit(): void {
+    this.museumService.getMuseumById(this.museumId).subscribe(museum=>{
+      this.name = museum[0].name;
+      this.type = museum[0].type;
+    })
   }
-
 }

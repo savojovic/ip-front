@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MuseumsService } from '../museums.service';
 
 @Component({
   selector: 'app-museumdetails',
@@ -7,11 +8,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./museumdetails.component.css']
 })
 export class MuseumdetailsComponent implements OnInit {
+  constructor(private router: Router, private museumService: MuseumsService) { }
 
-  constructor(private router: Router) { }
-
+  tours: any;
+  museumName: any;
+  museumId: any;
+  
   ngOnInit(): void {
-    const url = this.router.url.substring(this.router.url.lastIndexOf('/') + 1);//+1 for excluding '/' from /id
-    console.log(url);
+    this.museumId = this.router.url.substring(this.router.url.lastIndexOf('/') + 1);//+1 for excluding '/' from /id
+    this.museumService.getMuseumById(this.museumId).subscribe(res=>{
+      this.museumName=res[0].name;
+      this.tours = res[0].tours;
+    })
   }
 }

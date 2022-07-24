@@ -15,6 +15,8 @@ import { MuseumdetailsComponent } from './museumdetails/museumdetails.component'
 import { HomepageComponent } from './homepage/homepage.component';
 import { WeatherComponent } from './weather/weather.component';
 import { MuseumcardComponent } from './museumcard/museumcard.component';
+import {MatIconModule} from '@angular/material/icon';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -25,9 +27,11 @@ import { MuseumcardComponent } from './museumcard/museumcard.component';
     MuseumdetailsComponent,
     HomepageComponent,
     WeatherComponent,
-    MuseumcardComponent
+    MuseumcardComponent,
+    LoginComponent
   ],
   imports: [
+    MatIconModule,
     MatCardModule,
     MatListModule,
     MatButtonModule,

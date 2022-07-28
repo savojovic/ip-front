@@ -10,6 +10,7 @@ export const homePage = "http://localhost:4200";
 export const baseUrl = "http://localhost:8080";
 export const museumEndPoint = `/museums`;
 export const tourEndPoint = `/tour`;
+export const loginEndPoint = `/login`;
 export const openWeatherApiKey = `appid=63af5b14517966d094353d593b864a5f`;
 export const openWeatherUrl = `https://api.openweathermap.org/data/2.5/weather`;
 export const weatherUnits = `units=metric`;

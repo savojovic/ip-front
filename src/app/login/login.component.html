@@ -1,1 +1,17 @@
-<p>login works!</p>
+<div style="display: flex;flex-direction: column;">
+    <app-navbar></app-navbar>
+    <mat-card class="mat-elevation-z5 login-form" >
+        <mat-card-title>LOG IN</mat-card-title>
+        <form class="example-form" style="display: inline-block; margin-top: 30px;">
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Username</mat-label>
+              <input id="username" matInput>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Password</mat-label>
+                <input id="password" matInput type="password">
+              </mat-form-field>
+              <button mat-raised-button color="primary" type="button" (click)="onClick()" style="margin-top: 30px;">LOG IN</button>
+          </form>
+    </mat-card>
+</div>

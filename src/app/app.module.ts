@@ -15,8 +15,11 @@ import { MuseumdetailsComponent } from './museumdetails/museumdetails.component'
 import { HomepageComponent } from './homepage/homepage.component';
 import { WeatherComponent } from './weather/weather.component';
 import { MuseumcardComponent } from './museumcard/museumcard.component';
-import {MatIconModule} from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
 import { LoginComponent } from './login/login.component';
+import { MatFormFieldModule } from '@angular/material/form-field'
+import { MatInputModule } from '@angular/material/input'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -31,6 +34,9 @@ import { LoginComponent } from './login/login.component';
     LoginComponent
   ],
   imports: [
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatFormFieldModule,
     MatIconModule,
     MatCardModule,
     MatListModule,
